@@ -1,0 +1,98 @@
+.competition_heading {
+    float: left;
+}
+
+.competition_link {
+    float: right;
+}
+
+.competition_link_text {
+    font-size: 16px;
+    color: #3eb5f1;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease 0.35s;
+    display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.competition_link_text:hover {
+    color: #000;
+}
+
+.competition_link_text {
+
+}
+
+.competition_link_text:after {
+    display: block;
+    content: "";
+    background-color: #3eb5f1;;
+    margin-top: 10px;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.competition_link_text:hover:after,
+.competition_link_text:focus:after {
+    width: 100%;
+}
+
+
+.competition_s_heading {
+    margin-bottom: 40px;
+}
+
+.competition_s_text p {
+    font-size: 20px;
+}
+
+.competition_s_btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn_link {
+    border: 1px solid #3eb5f1;
+    padding: 20px 30px;
+    background: white;
+    color: #3eb5f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn_link::before {
+    content: "";
+    background-color: #3eb5f1;
+    color: white;
+    position: absolute;
+    width: 0;
+    height: 64px;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_link:hover {
+    color: white;
+}
+
+
+.btn_link:hover::before,
+.btn_link:focus::before {
+    width: 100%;
+    content: "Подробнее";
+}
